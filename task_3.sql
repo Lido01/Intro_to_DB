@@ -1,6 +1,6 @@
 -- to listing all the tables in alx_book_store in MySQL server
 USE DATABASE alx_book_store;
-USE TABLE alx_book_store;
+SHOW TABLES alx_book_store;
 
 SELECT * FROM Authors;
 SELECT * FROM Books;
