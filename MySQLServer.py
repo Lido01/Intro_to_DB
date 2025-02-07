@@ -1,5 +1,5 @@
 import mysql.connector
-
+from mysql.connector import Error
 # Database connection details (replace with your own)
 mydb = mysql.connector.connect(
     host="localhost",
@@ -7,14 +7,12 @@ mydb = mysql.connector.connect(
     password="1234Lidetu",
     database="alx_be_book-store"
 )
-
-if db.is_connected():
-    print("Database {database} created successfully!!")
-
-mycursor = mydb.cursor()
-
-mycursor.execute("""
-CREATE DATABASE IF NOT EXISTS alx_book_store
-""")
-cursor.commit()
-cursor.close()
+try:
+     if db.is_connected():
+         print("Database {database} created successfully!!")
+     mycursor = mydb.cursor()
+     mycursor.execute(""" CREATE DATABASE IF NOT EXISTS alx_book_store """)
+     cursor.commit()
+     cursor.close()
+except Error as e:
+    print(e)
