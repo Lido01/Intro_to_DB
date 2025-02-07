@@ -14,5 +14,5 @@ try:
      mycursor.execute(""" CREATE DATABASE IF NOT EXISTS alx_book_store """)
      cursor.commit()
      cursor.close()
-except mysql.connector.connect.Error as err:
-    print(err)
+except mysql.connector.Error as err:
+    print("The error to connect with sql: {err}")
