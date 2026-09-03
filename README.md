@@ -27,3 +27,34 @@ cd alx-django-database
 
 # Run the database test script
 python scripts/test_db_connection.py
+
+## Test Output Examples
+🚀 Starting Database Connection Test...
+==================================================
+
+✅ Testing SQLite Connection...
+   - Database path: db.sqlite3
+   - Connection successful!
+   - Version: 3.36.0
+
+✅ Testing PostgreSQL Connection...
+   - Host: localhost
+   - Port: 5432
+   - Database: django_db
+   - Connection successful!
+   - Version: PostgreSQL 14.5
+
+✅ Testing MySQL Connection...
+   - Host: localhost
+   - Port: 3306
+   - Database: django_db
+   - Connection successful!
+   - Version: MySQL 8.0.31
+
+==================================================
+📊 Test Results Summary:
+   ✅ SQLite: PASSED
+   ✅ PostgreSQL: PASSED
+   ✅ MySQL: PASSED
+
+🎉 All database connections are working!
