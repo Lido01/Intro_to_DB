@@ -13,4 +13,17 @@ This repository contains my comprehensive journey through ALX's Django Database 
 
 ---
 
-## 🗂️ Repository Structure
+---
+
+## 🧪 Database Local Test
+
+### Quick Database Connection Test
+
+To verify your database setup is working correctly, run the database test script:
+
+```bash
+# Navigate to the repository root
+cd alx-django-database
+
+# Run the database test script
+python scripts/test_db_connection.py
