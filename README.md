@@ -37,3 +37,11 @@ class Student(models.Model):
     
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+
+Category Technologies
+Backend Django 4.2+, Django REST Framework
+Databases PostgreSQL, MySQL, SQLite
+Caching Redis, Memcached
+Testing pytest, Django TestCase
+Monitoring Django Debug Toolbar, Prometheus
+CI/CD GitHub Actions, Docker, Kubernetes
